@@ -1,0 +1,9 @@
+<h1>Welcome Human!</h1>
+<p> Find my curated thoughts here.</p>
+
+<% @blog_posts.each do |post| %>
+    <div>
+        <h2>  <%= link_to post.title , post %></h2>
+        <p> <%= post.body%> </p>
+   </div>
+<%end%>
